@@ -1,5 +1,4 @@
-// Ax = B slough solution by the Jordan-Gauss method
-// hi
+// Ax = B slough solution by the Jordan-Gauss method (my algorithm, not works)
 
 #include <iostream>
 #include <iomanip>
@@ -83,10 +82,6 @@ double* JordanGaussMethod(double** matrixA, double* vectorB, int order)
                 vectorX[reverseRpeat] = vectorB[reverseRpeat] - matrixA[i][j] * vectorX[reverseRpeat];
             }
         }
-
-        
-
-
     }
 
     return vectorX;
